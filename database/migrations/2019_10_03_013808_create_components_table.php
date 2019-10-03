@@ -15,7 +15,14 @@ class CreateComponentsTable extends Migration
     {
         Schema::create('components', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('module_id');
+            $table->string('image');
+            $table->string('link');
+            $table->string('text');
+            $table->integer('order');
             $table->timestamps();
+
+            $table->foreign('module_id')->references('id')->on('modules');
         });
     }
 

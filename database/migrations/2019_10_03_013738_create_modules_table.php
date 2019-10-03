@@ -15,7 +15,12 @@ class CreateModulesTable extends Migration
     {
         Schema::create('modules', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('type_module_id');
+            $table->unsignedBigInteger('page_id');
             $table->timestamps();
+            
+            $table->foreign('type_module_id')->references('id')->on('type_modules');
+            $table->foreign('page_id')->references('id')->on('pages');
         });
     }
 
