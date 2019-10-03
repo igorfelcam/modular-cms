@@ -15,7 +15,7 @@ class CreatePagesTable extends Migration
     {
         Schema::create('pages', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('favicon');
+            $table->string('favicon')->nullable();
             $table->string('name');
             $table->timestamps();
         });
