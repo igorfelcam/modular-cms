@@ -1,72 +1,40 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# Modular CMS
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## About Modular CMS
 
-## About Laravel
+For you who develop websites and need to implement a development standard for your projects, but don't have much time for that, I present Modular CMS!
+I needed to keep a standard for my site designs, so with Laravel, I created this module-based CMS to be simple and straightforward, you can split your site design by scaling it into "page", "module" and "component".
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## What's each split
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Page
+Is basically the page itself of your site, if your site is a page you will only have one page registered in the "page" part, for example.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Module
+"Module" is referred to here as parts that make up a website page, such as header, section, footer, etc.
+By default, in the project, the following modules are configured: header, menu, banner, section, gallery, form, and footer.
+But that does not mean that you will need to use the same module settings, as it is just a recommendation. Change the way it fits your project.
 
-## Learning Laravel
+### Component
+Finally, the "component" is what is in the modules. To keep the default, is recommended this item  to be just a combination of image, text, link and component order in the module. Organize the best way for you.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## How is organized in DB
+See how the content control ER of this project is organized, simple, no?
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<img src="https://res.cloudinary.com/igorfelcam/image/upload/v1570120015/modular-cms/modular-cms-er_nesvs4.png" width="400">
 
-## Laravel Sponsors
+## Front-end of CMS
+We're working in it... in progress... wait one moment, pleeeeease!
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Front-end of your website
+So, you're free for make how you wish!
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
+The goal here is to help standardize the management part of a website ... now, the front end is up to you, you are able to.
+Of course, we recommend using Vue.js as it is integrated with Laravel or viewed with the blade ... but that's your choice. If you don't use any of these features built into Laravel, just tailor the project to json endpoints maybe. Diy.
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Help me
+- [Laravel](https://laravel.com/docs)
+- [Vue.js](https://vuejs.org/v2/guide/)
 
 ## License
-
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
